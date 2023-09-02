@@ -1,3 +1,5 @@
+// Let us import chalk package
+import chalk from "chalk";
 // define a Division Function
 export function divisionCalculator(a, operator, b) {
     if (operator == "/") {
@@ -6,7 +8,7 @@ export function divisionCalculator(a, operator, b) {
             console.error(`Division by Zero is not Allowed.`);
         }
         else {
-            return console.log(`The desired result of Division of ${a} by ${b} is ${c}.`);
+            return console.log(chalk.bgWhite.green(`\nThe desired result of Division of ${a} by ${b} is ${c}.`));
         }
         ;
     }
