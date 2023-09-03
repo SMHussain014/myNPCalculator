@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 // Design a Calculator using inquirer, chalk and chalk-animation
 // let's import inquirer, chalk and  packages
 import inquirer from "inquirer";
@@ -26,6 +27,7 @@ async function welcome() {
 // Call the chalk-animation function
 await welcome();
 async function startLoop() {
+    let loop;
     do {
         // Call the input functions and store their values in three variables
         let a = await firstInteger();
@@ -39,7 +41,7 @@ async function startLoop() {
         divisionCalculator(a.firstNum, operator.operator, b.secondNum);
         modulusCalculator(a.firstNum, operator.operator, b.secondNum);
         powerCalculator(a.firstNum, operator.operator, b.secondNum);
-        var loop = await inquirer.prompt(
+        loop = await inquirer.prompt(
             {
                 name: "restart",
                 type: "input",

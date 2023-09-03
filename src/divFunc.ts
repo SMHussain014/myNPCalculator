@@ -1,7 +1,7 @@
 // Let us import chalk package
 import chalk from "chalk";
 // define a Division Function
-export function divisionCalculator(a: number, operator: any, b: number) {
+export function divisionCalculator(a: number, operator: unknown, b: number) {
     if (operator == "/") {
         let c = Math.fround(a / b).toFixed(2);
         if (b == 0) {
