@@ -1,20 +1,31 @@
 {
   "name": "mynpcalculator",
-  "version": "1.0.2",
-  "description": "Design a Calculator",
+  "version": "1.0.5",
+  "description": "Designing a simple calculator",
   "main": "index.js",
   "type": "module",
-  "bin": "./index.js",
+  "bin": "./public/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMHussain014/myNPCalculator.git"
+  },
+  "keywords": [
+    "calculator",
+    "calculate"
+  ],
   "author": "Syed Muhammad Hussain",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SMHussain014/myNPCalculator/issues"
+  },
+  "homepage": "https://github.com/SMHussain014/myNPCalculator#readme",
   "devDependencies": {
     "@types/chalk": "^2.2.0",
-    "@types/chalk-animation": "^1.6.1",
     "@types/inquirer": "^9.0.3",
-    "@types/node": "^20.5.7"
+    "@types/node": "^20.5.9"
   },
   "dependencies": {
     "chalk": "^5.3.0",
