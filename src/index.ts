@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 // Design a Calculator using inquirer, chalk and chalk-animation
-// let's import inquirer, chalk and  packages
+// let's import inquirer, chalk and chalk-animation packages
 import inquirer from "inquirer";
 import chalk from "chalk";
 import chalkAnimation from "chalk-animation";
@@ -33,7 +33,6 @@ async function startLoop() {
         let a = await firstInteger();
         let operator = await selectedOperator();
         let b = await secondInteger();
-        // console.log(`${a.firstNum} ${operator.operator} ${b.secondNum}`);
         // Call the functions and used stored values of these variables
         additionCalculator(a.firstNum, operator.operator, b.secondNum);
         subtractionCalculator(a.firstNum, operator.operator, b.secondNum);
