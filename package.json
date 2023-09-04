@@ -2,7 +2,7 @@
   "name": "mynpcalculator",
   "version": "1.0.5",
   "description": "Designing a simple calculator",
-  "main": "index.js",
+  "main": ".index.js",
   "type": "module",
   "bin": "./public/index.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/SMHussain014/myNPCalculator#readme",
   "devDependencies": {
     "@types/chalk": "^2.2.0",
+    "@types/chalk-animation": "^1.6.1",
     "@types/inquirer": "^9.0.3",
     "@types/node": "^20.5.9"
   },
