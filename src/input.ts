@@ -5,8 +5,7 @@ import chalk from "chalk";
 async function getFirstInteger() {
     // We have to use a loop so that user may provide valid input
     while (true) {
-        let input1 = await inquirer.prompt([
-            {
+        let input1 = await inquirer.prompt({
                 name: "firstNum",
                 type: "input",
                 message: "\nPlease enter a valid integer: \n",
@@ -18,8 +17,7 @@ async function getFirstInteger() {
                         return `Invalid Input, Please enter a valid integer:`;
                     }
                 },
-            }
-        ]);
+            });
         console.log(chalk.bgCyan.blueBright(`Valid Input, the value of integer is: ${input1.firstNum}.\n`));
         return input1;
     }
@@ -39,8 +37,7 @@ async function selectedOperator() {
 async function getSecondInteger() {
     // We have to use a loop so that user may provide valid input
     while (true) {
-        let input3 = await inquirer.prompt([
-            {
+        let input3 = await inquirer.prompt({
                 name: "secondNum",
                 type: "input",
                 message: "\nPlease enter a valid integer: \n",
@@ -52,7 +49,7 @@ async function getSecondInteger() {
                         return `Invalid Input, Please enter a valid integer:`;
                     }
                 },
-            }]);
+            });
         console.log(chalk.bgCyan.blueBright(`Valid Input, the value of integer is: ${input3.secondNum}.\n`));
         return input3;
     }
